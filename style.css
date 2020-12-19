@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+/* #################################### HTML element styling ##################################### */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+
+}
+a{
+    font-size:1.6rem;
+    text-decoration:none;
+}
+p,li{
+    font-size:1.6rem;
+    margin-bottom:0.5em;
+    letter-spacing:0.15em;
+}
+h1,h2,h3{
+    margin-bottom:0.5em;
+    letter-spacing:0.15em;
+    font-weight: 300;
+}
+/* ################ utility classes################### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.lg-heading{
+    font-size:3.5rem;
+}
+.md-heading{
+    font-size:2.2rem;
+
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-grey{
+    color: #555555;
+}
+.bg-dark{
+    background-image: linear-gradient( 112.1deg, rgb(19, 24, 37) 11.4%, rgb(28, 37, 63) 70.2% );
+}
+
+.btn{
+    display:inline-block;
+    padding: 0.5em 1.5em;
+    font-weight:500;
+    text-transform: uppercase;
+    margin:0.5em;
+
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 100px;
+       
+}
+.btn-primary:hover{
+    background-color:#ccc;
+    
+}
+.btn-secondary{
+    
+    border-radius: 1.5em;
+    border:2px solid #e63946;
+    background-color:#fff;
+
+}
+.btn-secondary:hover{
+    background-color:#f5dcdc ;
+
+}
+
+
+
+/* ######################### header styling  ############################# */
+.header{
+    position: relative;
+    height: 99vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./IMG/header-image.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.navbar{
+    padding:1rem;
+}
+.navbar .logo{
+    float:left;
+    font-size: 3.5rem;
+}
+ .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+    
+}
+ .navbar .nav-item{
+    display:inline-block;
+    padding:1rem;
+    text-transform: uppercase;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear:both;
+
+}
+
+
+/* ###################################    header content styling      ######################################### */
+.header-content{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+
+}
+.header-content p{
+    text-transform: uppercase;
+
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+/* #################################### Showcase section styling ##################################### */
+.showcase{
+    background: #dddddd;
+    padding:10rem 0;
+    
+}
+
+.row{
+    height: 350px;
+    background: #ffffff;
+    /* margin-bottom: 10rem; */
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear:both;
+
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box , .row2 .text-box{
+    float:left;
+    width:50%
+}
+.row2 .img-box , .row1 .text-box{
+    float:right;
+    width:50%
+}
+.row .img-box{
+    
+    height:100%;
+}
+.row .text-box{
+    
+    max-height:100%;
+    max-width:100%;
+    padding: 3rem;
+}
+.row .img-box img{
+    display:inline-block;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.text-box h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+.container2{
+    margin-top:10rem;
+}
+/* ################################### Feature section Styling ########################################*/
+.feature{ 
+    padding: 10rem 0 ;
+}
+.box-wrapper{ 
+ box-shadow:5px 5px 20px 0px rgba(68, 46, 46, 0.377);
+}
+.box{
+    width:33.333333333333%;
+    float:left;
+    padding:2rem;
+    text-align: center;
+
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.box1,.box3{
+
+  background-color:#263238;
+  color:#fff;
+}
+.box2{
+
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color:#fff;
+}
+.box h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+/* ################################### Footer section Styling ########################################*/
+
+.footer{
+    
+    background-image: linear-gradient( 112.1deg, rgb(19, 24, 37) 11.4%, rgb(28, 37, 63) 70.2% );
+    text-align: center;
+    color:#fff;
+    padding: 1.5rem;
+
+}
+.social-links i{
+    margin:2rem;
+}
+.footer p{
+    font-weight:100;
+}
+.footer a i{
+    color:#fff;
+}
+
+
+
+
+
+/* #################################### about page styling ##################################### */
+.about{
+    padding:5rem 0;
+   
+} 
+.about-heading::after{
+    content:'';
+    display: block;
+    clear: both;
+    border-top: 6px solid #e63946;
+    width: 100%;
+}
+.about .sec{
+    
+    
+    text-align: center;
+    margin:0 auto;
+   
+   
+}
+.sec::after{
+    content:'';
+    display: block;
+    clear:both;
+
+}
+.about .sec1{
+    
+    float: left;
+    width:50%;
+    
+}
+.about .sec2{
+    
+    float:right;
+    width:50%; 
+}
+.about .sec li::before{
+    content:'\2713';
+    color:#e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+/* ############# counts styling ############### */
+
+.count-item{
+    
+    float:left;
+    width:25%;
+    text-align:center;
+    text-transform: uppercase;
+   
+    
+}
+.counts::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: bold;
+    color:#e63946;
+
+}
+.count-item p{
+    
+    font-weight: bold;
+    color:#555;
+    font-size: 1.8rem;
+}
+/* ##### about banner styling ######### */
+.about-banner{
+    
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color:#f4f4f4;
+    padding:1rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top:3rem;
+}
+
+.banner-left{
+    width:60%;
+    float: left;
+}
+.banner-right{
+    
+    width:40%;
+    float: right;
+    text-align: right;
+}
+.about-banner::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.about-line{
+   font-weight: bold;
+   font-size: 2rem;
+   margin-top: 1.6rem; 
+}
+.btn-about{
+    text-align: center;
+    display:inline-block;
+    font-weight:700;
+    font-size:3rem;
+    text-transform: uppercase;
+    border: 3px solid white;
+    padding:0.3rem 2.5rem;
+    letter-spacing:0.5rem;
+    color:#f4f4f4;
+}
+
+
+.about-footer{
+    margin-top:5rem;
+}
+
+
+
+
+
+/* ###################################    Contact page Styling     #################################### */
+.contact-form {
+    padding:5rem 0;
+    background:#f7f7f7;
+    
+}
+.form-wrapper::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+
+.form-wrapper .company-address{
+    width:49%;
+    float: left;
+    background:#fff;
+    padding:1rem;
+    height:760px;
+    box-shadow:0px 5px 20px 0px rgba(68, 46, 46, 0.377);
+
+}
+.form-wrapper .address-group i{
+    display:inline-block;
+    margin-right:1rem;
+}
+.form-wrapper .address-group h2{
+    display:inline-block;
+    text-transform: uppercase;
+    
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper img{
+    max-width:100%;
+    min-height: 40rem;
+    object-fit:cover;
+    object-position: right;
+    padding-bottom: 1rem;
+    
+}
+
+
+/* ####### form styling########### */
+
+.form-wrapper .form{
+    height:760px;
+    font-size:1.6rem;
+    width:49%;
+    float: right;
+    background:#fff;
+    padding:1rem;
+    box-shadow:0px 5px 20px 0px rgba(68, 46, 46, 0.377);
+
+
+}
+
+.form h1::after{
+    content:'';
+    display:block;
+    border:3px solid #ee4758;
+    width:100%;
+}
+.form-wrapper label{
+    display:block;
+
+}
+.form-wrapper input{
+    padding :0.5rem;
+    width:100%;
+
+}
+.form-wrapper .form .form-group{
+    margin-bottom:1.2rem;
+
+}
+.form-wrapper .form label::after{
+    content:'*';
+    color:#e63946;
+
+}
+.form-wrapper .form textarea{
+    width:100%;
+    height:300px;
+    padding:1rem;
+}
+
+.form-btn{
+    display:block;
+    margin:0 auto;
+    padding:0.5em 3em;
+    font-size:1.8rem;
+    text-transform: uppercase;
+    background:#e63946;
+    color:#fff;
+    outline:none;
+    border:none;
+    cursor:pointer;
+
+}
+.form-btn:active {
+    background:#cc0314;
+}
+
+
+
+/* ############## media queries############## */
+
+@media ( max-width: 500px){
+    html{
+        font-size:8px;
+    }
+    .navbar .nav-items , .navbar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .container{
+        width:90%;
+        margin:0 auto;
+    }
+    /* .navbar .logo{
+        font-weight: bold;
+    } */
+
+    .header-content .btn-primary{
+        margin:2rem;
+
+    }
+    .row{
+        height:auto;
+    }
+    .container2{
+        margin-top:10rem;
+        
+
+    }
+    .row .text-box{
+        padding:0rem 3rem 1rem 3rem;
+    }
+    .row1 .img-box , .row2 .text-box, .row2 .img-box , .row1 .text-box{
+        float:none;
+        width:100%;
+        height:auto;
+        
+    }
+    
+    .box2 ,.box3{
+        margin-top:7rem;
+    }
+    .box{
+        width:100%;
+        float:none;
+        
+        box-shadow:5px 5px 20px 0px rgba(68, 46, 46, 0.377);
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .banner-left, .banner-right{
+        float:none;
+        width:100%;
+        text-align:center;
+    }
+
+
+    .form-wrapper .company-address{
+        float:none;
+        height:auto;
+        width:100%;
+        margin-bottom:5rem;
+
+    }
+    .form-wrapper .form{
+
+        float:none;
+        height:auto;
+        width:100%;
+    }
+
+
+
+}
+@media (min-width:501px) and (max-width:786px){
+
+    html{
+        font-size:8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    
+    .navbar .nav-items , .navbar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    .container{
+        width:90%;
+        margin:0 auto;
+    }
+    
+
+    .header-content .btn-primary{
+        margin:2rem;
+
+    }
+    .row{
+        height:auto;
+    }
+    .container2{
+        margin-top:10rem;
+        
+
+    }
+    .row .text-box{
+        padding:0rem 3rem 1rem 3rem;
+    }
+    .row1 .img-box , .row2 .text-box, .row2 .img-box , .row1 .text-box{
+        float:none;
+        width:100%;
+        height:auto;
+        
+    }
+    
+    .box2 ,.box3{
+        margin-top:7rem;
+    }
+    .box{
+        width:100%;
+        float:none;
+        
+        box-shadow:5px 5px 20px 0px rgba(68, 46, 46, 0.377);
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .banner-left, .banner-right{
+        float:none;
+        width:100%;
+        text-align:center;
+    }
+
+
+    .form-wrapper .company-address{
+        float:none;
+        height:auto;
+        width:100%;
+        margin-bottom:5rem;
+
+    }
+    .form-wrapper .form{
+
+        float:none;
+        height:auto;
+        width:100%;
+    }
+
+
+
+   
+
+
+}
+@media (min-width:769px) and (max-width:1200px){
+    html{
+        font-size:56.25%;
+
+    }
+    
+    .row .text-box h2{
+        font-size:2.2rem;
+        font-weight:500;
+
+    }
+}
+@media (orientation:landscape)  and (max-height:500px){
+    .header{
+        height:90vmax;
+    }
+}
